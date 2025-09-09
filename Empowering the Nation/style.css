@@ -1,0 +1,163 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #0c214a;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-left: 1.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .menu-icon {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 2rem;
+  }
+  
+  .hero-text {
+    max-width: 50%;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-text p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: #ff7f32;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .hero-image img {
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 3rem 2rem;
+    background: #fff;
+    color: #0c214a;
+    text-align: center;
+  }
+  
+  .about h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .about p {
+    margin-bottom: 2rem;
+  }
+  
+  .courses {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .course-card {
+    background: #f3f3f3;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+  }
+  
+  .btn-dark {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background: #0c214a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  /* Footer */
+  footer {
+    background: #0c214a;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-content div {
+    flex: 1;
+    margin: 1rem;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.7rem;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  form button {
+    width: 100%;
+  }
+  
+  .socials a {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    color: white;
+  }
+  .nav-links a.active {
+    color: #ff7f32;
+  }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply Now - Empowering the Nation</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Auto-fill course from URL
+    window.onload = function () {
+      const params = new URLSearchParams(window.location.search);
+      document.getElementById("courseName").value = params.get("course") || "";
+    }
+  </script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo"><a href="index.html"><img src="logo.jpg" alt="Logo"></a></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="fees.html">Fees</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Application Form -->
+  <section class="about">
+    <h2>Apply Now</h2>
+    <p>Please fill in your details to apply for your chosen course.</p>
+
+    <form>
+      <label>Selected Course</label>
+      <input type="text" id="courseName" readonly>
+
+      <label>Full Name</label>
+      <input type="text" placeholder="Enter your full name" required>
+
+      <label>Email Address</label>
+      <input type="email" placeholder="Enter your email" required>
+
+      <label>Phone Number</label>
+      <input type="tel" placeholder="Enter your phone number" required>
+
+      <label>Preferred Start Date</label>
+      <input type="date" required>
+
+      <label>Additional Notes</label>
+      <textarea placeholder="Tell us why you want to join this course"></textarea>
+
+      <button type="submit" class="btn-dark">Submit Application</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Empowering the Nation</p>
+  </footer>
+</body>
+</html>

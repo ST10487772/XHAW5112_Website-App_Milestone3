@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment - Empowering the Nation</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Script to fetch course + amount from URL
+    window.onload = function () {
+      const params = new URLSearchParams(window.location.search);
+      document.getElementById("courseName").value = params.get("course") || "";
+      document.getElementById("amount").value = "R" + (params.get("amount") || "");
+    }
+  </script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo"><a href="index.html"><img src="logo.png" alt="Logo"></a></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="fees.html">Fees</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Payment Form -->
+  <section class="about">
+    <h2>Payment Page</h2>
+    <p>Please complete your details to proceed with payment.</p>
+
+    <form>
+      <label>Course Name</label>
+      <input type="text" id="courseName" readonly>
+
+      <label>Amount</label>
+      <input type="text" id="amount" readonly>
+
+      <label>Full Name</label>
+      <input type="text" placeholder="Enter your full name" required>
+
+      <label>Email Address</label>
+      <input type="email" placeholder="Enter your email" required>
+
+      <label>Phone Number</label>
+      <input type="tel" placeholder="Enter your phone number" required>
+
+      <label>Payment Method</label>
+      <select required>
+        <option value="">Select a method</option>
+        <option value="card">Credit/Debit Card</option>
+        <option value="eft">EFT (Bank Transfer)</option>
+        <option value="cash">Cash at Campus</option>
+      </select>
+
+      <button type="submit" class="btn-dark">Confirm Payment</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Empowering the Nation</p>
+  </footer>
+</body>
+</html>

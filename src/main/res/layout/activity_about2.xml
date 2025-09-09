@@ -1,0 +1,22 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/aboutText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Empowering the Nation was established in 2022 in Johannesburg.
+Hundreds of domestic workers and gardeners have completed our six-month Learnerships and six-week Short Skills Programmes.
+We aim to uplift the community through skills training."
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/aboutBackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_marginTop="20dp"/>
+
+</ScrollView>

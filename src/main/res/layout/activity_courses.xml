@@ -1,0 +1,103 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/coursesTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Available Courses"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Six-month courses -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Six-Month Courses"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/firstAidBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="First Aid – R1500" />
+
+        <Button
+            android:id="@+id/sewingBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sewing – R1500" />
+
+        <Button
+            android:id="@+id/landscapingBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Landscaping – R1500" />
+
+        <Button
+            android:id="@+id/lifeSkillsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Life Skills – R1500" />
+
+        <!-- Short courses -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Short Courses"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/childMindingBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Child Minding – R750" />
+
+        <Button
+            android:id="@+id/cookingBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cooking – R750" />
+
+        <Button
+            android:id="@+id/gardenMaintenanceBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Garden Maintenance – R750" />
+
+        <!-- Quote and Back -->
+        <Button
+            android:id="@+id/getQuoteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Get a Quote" />
+
+        <Button
+            android:id="@+id/coursesAboutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="About Empowering the Nation" />
+
+
+        <Button
+            android:id="@+id/coursesBackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Back" />
+    </LinearLayout>
+</ScrollView>
